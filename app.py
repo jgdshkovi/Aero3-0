@@ -6,8 +6,8 @@ lis = []
 
 @app.route('/')
 def home():
-	#return render_template('form.html',data=lis)
-	return 'home'
+	return render_template('form.html',data=lis)
+	#return 'home'
 
 @app.route('/chat',methods=['GET', 'POST'])
 def chat():
