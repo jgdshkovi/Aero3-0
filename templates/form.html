@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CHAT</title>
+</head>
+<body>
+	<form action="/chat" method = "POST">
+
+		{% for who,reply in data %}
+			<p><b> {{who}}:</b> {{reply}}</p>
+		{% endfor %}
+
+
+    <p>Enter txt to chat 😁 <input type = "text" name = "query" /></p>
+</form>
+</body>
+</html>
