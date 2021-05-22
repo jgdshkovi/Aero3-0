@@ -4,14 +4,14 @@
 	<title>CHAT</title>
 </head>
 <body>
-	<form action="/chat" method = "POST">
+	<form action="/help" method = "POST">
 
 		{% for who,reply in data %}
 			<p><b> {{who}}:</b> {{reply}}</p>
 		{% endfor %}
 
 
-    <p>Enter txt to chat 😁 <input type = "text" name = "query" /></p>
-</form>
+    	<p>Enter txt to chat 😁 <input type = "text" name = "query" /></p>
+	</form>
 </body>
 </html>
